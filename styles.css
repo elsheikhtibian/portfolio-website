@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: "IM Fell French Canon SC";
+   background-color: black;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.big-title {
+    font-size: 80px;
+    margin: 0;
+}
+
+.big-button {
+    width: 180px;
+    height: 35px;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 24px;
+    color: #372b0d;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 50px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.second-page .section {
+    font-size: 200px;
+    background-color: #f0f0f8;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+

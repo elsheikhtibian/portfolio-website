@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tibian Elsheikh's Portfolio</title>
+</head>
+<body>
+    <div class="page" id="firstPage">
+        <div class="header">
+            <h1 class="big-title">Tibian Elsheikh</h1>
+            <div class="button-container">
+                <button type="button" class="big-button" onclick="scrollToSection('about')">about</button>
+                <button type="button" class="big-button" onclick="scrollToSection('skills')">skills</button>
+                <button type="button" class="big-button" onclick="scrollToSection('projects')">projects</button>
+                <button type="button" class="big-button" onclick="scrollToSection('contact')">contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="secondPage">
+        <div class="section" id="about">
+            <h1>About</h1>
+            <p>Hi, my name is Tibian blah blah </p>
+        </div>
+        <div class="section" id="skills">
+            <h1>Skills</h1>
+            <p>Languages, tools, etc</p>
+        </div>
+        <div class="section" id="projects">
+            <h1>Projects</h1>
+            <p>Here is a list of projects I've completed</p>
+        </div>
+        <div class="section" id="contact">
+            <h1>Contact</h1>
+            <p>You can contact me at </p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
