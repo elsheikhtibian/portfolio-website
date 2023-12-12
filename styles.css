@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    font-family: "IM Fell French Canon SC";
-    background:url('https://www.webfx.com/blog/images/cdn.designinstruct.com/files/606-free-landscape-photos/free-landscape-photo-03.jpg') center center/cover no-repeat fixed;
+    font-family: 'OCR A Std', sans-serif;
+    background-color: rgb(9, 2, 27);
+    color: rgb(255, 255, 255);
 }
 
 .page {
@@ -9,14 +10,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
+    position: relative;
+    font-family: 'OCR A Std', sans-serif;
 }
 
 .big-title {
-    font-size: 80px;
+    font-size: 50px;
     margin: 0;
+    margin-left: 100px;
+}
+
+.middle-title {
+    font-size: 100px;
+    margin: 0;
+    margin-left: 100px;
+}
+
+.last-title {
+    font-size: 25px;
+    margin: 0;
+    margin-left: 100px;
 }
 
 .big-button {
@@ -25,13 +38,12 @@ body {
     font-weight: 100;
     font-size: 20px;
     line-height: 24px;
-    color: #372b0d;
-    background-color: #f9f9f9;
+    color: #ffffff;
+    background-color: rgb(9, 2, 27);
     border: none;
     border-radius: 50px;
-    margin: 20px;
-    position: relative;
-    text-align: center;
+    margin-bottom: 200px; /* Adjust margin as needed */
+    text-align: top;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -44,4 +56,26 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+@keyframes bounceAnimation {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.animated-emoji {
+    font-size: 150px;
+    animation: bounceAnimation 2s infinite;
+    position: absolute;
+    right: 20%; /* Align to the right side */
+    top: 40%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
 
