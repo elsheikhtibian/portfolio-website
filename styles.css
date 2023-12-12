@@ -1,63 +1,35 @@
 body {
     margin: 0;
+    font-family: "IM Fell French Canon SC";
+    background-color: black;
     font-family: 'OCR A Std', sans-serif;
-    background-color: rgb(9, 2, 27);
     color: rgb(255, 255, 255);
 }
 
 .page {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
     position: relative;
     font-family: 'OCR A Std', sans-serif;
+    padding: 20px; /* Added padding for better spacing on small screens */
 }
 
 .big-title {
-    font-size: 50px;
+    font-size: 40px; /* Adjusted font size for better mobile experience */
     margin: 0;
-    margin-left: 100px;
 }
 
-.middle-title {
-    font-size: 100px;
-    margin: 0;
-    margin-left: 100px;
+.animated-emoji {
+    display: inline-block;
+    font-size: 30px; /* Adjusted font size for better mobile experience */
+    animation: bounce 3s infinite; /* Added animation property */
 }
 
-.last-title {
-    font-size: 25px;
-    margin: 0;
-    margin-left: 100px;
-}
-
-.big-button {
-    width: 180px;
-    height: 35px;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 24px;
-    color: #ffffff;
-    background-color: rgb(9, 2, 27);
-    border: none;
-    border-radius: 50px;
-    margin-bottom: 200px; /* Adjust margin as needed */
-    text-align: top;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.second-page .section {
-    font-size: 200px;
-    background-color: #f0f0f8;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-@keyframes bounceAnimation {
+@keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
@@ -69,13 +41,15 @@ body {
     }
 }
 
-.animated-emoji {
-    font-size: 150px;
-    animation: bounceAnimation 2s infinite;
-    position: absolute;
-    right: 20%; /* Align to the right side */
-    top: 40%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for vertical centering */
+@media only screen and (min-width: 600px) {
+    .big-title {
+        font-size: 60px;
+    }
+
+    .animated-emoji {
+        font-size: 50px;
+    }
 }
+
 
 
