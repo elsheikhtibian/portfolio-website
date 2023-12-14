@@ -1,29 +1,32 @@
 body {
     margin: 0;
+    font-family: "IM Fell French Canon SC";
+    background-color: black;
     font-family: 'OCR A Std', sans-serif;
-    background-color: rgb(9, 2, 27);
     color: rgb(255, 255, 255);
 }
 
 .page {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
     position: relative;
     font-family: 'OCR A Std', sans-serif;
+    padding: 20px; /* Added padding for better spacing on small screens */
 }
 
 .big-title {
-    font-size: 50px;
+    font-size: 40px; /* Adjusted font size for better mobile experience */
     margin: 0;
-    margin-left: 100px;
 }
 
-.middle-title {
-    font-size: 100px;
-    margin: 0;
-    margin-left: 100px;
+.animated-emoji {
+    display: inline-block;
+    font-size: 30px; /* Adjusted font size for better mobile experience */
+    animation: bounce 3s infinite; /* Added animation property */
 }
 
 .last-title {
@@ -76,13 +79,15 @@ body {
     }
 }
 
-.animated-emoji {
-    font-size: 150px;
-    animation: bounceAnimation 2s infinite;
-    position: absolute;
-    right: 20%; /* Align to the right side */
-    top: 40%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for vertical centering */
+@media only screen and (min-width: 600px) {
+    .big-title {
+        font-size: 60px;
+    }
+
+    .animated-emoji {
+        font-size: 50px;
+    }
 }
+
 
 
