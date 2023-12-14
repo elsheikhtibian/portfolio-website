@@ -32,6 +32,13 @@ body {
     margin-left: 100px;
 }
 
+.image-container {
+    position: relative;
+    bottom: 400px;
+    left: 1200px;
+
+}
+
 .big-button {
     width: 180px;
     height: 35px;
