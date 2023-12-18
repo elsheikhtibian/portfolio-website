@@ -9,8 +9,8 @@ body {
 .page {
     height: 100vh;
     margin: 0;
-    margin-right: 300px;
-    margin-bottom: 150px;
+    margin-right: 600px; /* Adjusted margin-right to move 20% to the left */
+    margin-bottom: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,21 +24,21 @@ body {
 .big-title {
     font-size: 50px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
     margin-top: 40px; /* Adjusted margin-top to move 30% up */
 }
 
 .middle-title {
     font-size: 100px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
     margin-top: 30px; /* Adjusted margin-top to move 30% up */
 }
 
 .last-title {
     font-size: 25px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
     margin-top: 30px; /* Adjusted margin-top to move 30% up */
 }
 
@@ -73,8 +73,8 @@ body {
     background: url('https://i.pinimg.com/originals/2c/e2/e0/2ce2e0d8e2eeb0f8bfedf5503a346d4f.gif') center/cover no-repeat;
     
     position: absolute;
-    left: 93%;
-    top: 40%;
+    left: 110%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
