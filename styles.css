@@ -25,24 +25,23 @@ body {
     font-size: 50px;
     margin: 0;
     margin-left: 100px;
-    margin-top: 50px;
-    
+    margin-top: 40px; /* Adjusted margin-top to move 30% up */
 }
 
 .middle-title {
     font-size: 100px;
     margin: 0;
     margin-left: 100px;
-    
-    
+    margin-top: 30px; /* Adjusted margin-top to move 30% up */
 }
 
 .last-title {
     font-size: 25px;
     margin: 0;
     margin-left: 100px;
-    
+    margin-top: 30px; /* Adjusted margin-top to move 30% up */
 }
+
 
 .big-button {
     width: 180px;
@@ -67,18 +66,25 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-.animated-emoji {
-    display: inline-block;
-    font-size: 30px; /* Adjusted font size for better mobile experience */
-    animation: bounce 3s infinite; /* Added animation property */
-}
 
-.animated-emoji {
+@keyframes bounceAnimation {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animated-emoji {
     font-size: 150px;
     animation: bounceAnimation 2s infinite;
     position: absolute;
-    right: 20%; /* Align to the right side */
-    top: 40%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for vertical centering */
-
-}
+    left: 93%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  
