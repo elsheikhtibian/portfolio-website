@@ -22,7 +22,23 @@
     </div>
     
     <a href="#secondPage" class="scroll-button">
+        <div class="page" id="secondPage">
+            <div class="section">Second page. </div>
 
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        </script>
 </body>
 </html>
 
