@@ -10,7 +10,7 @@ body {
     height: 2px; /* Set the height of the line */
     background-color: #3498db; /* Set the color of the line */
     width: 100%; /* Make the line span the entire width of the page */
-    margin-top: 60px; /* Adjusted margin to move the line down */
+    margin-top: 0;
 }
 
 .page {
@@ -48,24 +48,10 @@ body {
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
     margin-top: -25px; /* Moved 50% more up from the previous value */
+    color: #3498db;
    
 }
 
-
-.big-button {
-    width: 180px;
-    height: 35px;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 24px;
-    color: #ffffff;
-    background-color: rgb(9, 2, 27);
-    border: none;
-    border-radius: 50px;
-    margin-bottom: 200px; /* Adjust margin as needed */
-    text-align: top;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 .second-page .section {
     font-size: 200px;
     background-color: #f0f0f8;
@@ -126,4 +112,28 @@ body {
 .scroll-button: hover{
     transform: scale(1.1);
      background-color: #3498db;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row; /* Change to row to make buttons appear next to each other */
+    justify-content: center; /* Optional: Center the buttons horizontally */
+    align-items: center;
+}
+
+.custom-button {
+    width: 100px;
+    height: 50px;
+    font-family: 'OCR A Std', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 0px;
+    color: #3498db;
+    background-color: #060606;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+    left: 450px;
+    margin-left: 10px; /* Adjusted margin-right to move the buttons more to the right */
+    position: relative;
 }

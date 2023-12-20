@@ -8,10 +8,22 @@
     <link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet">
 </head>
 <body>
+
+<!-- Buttons-->
+<div class="button-container">
+    <button class="custom-button">Home</button>
+    <button class="custom-button">About me</button>
+    <button class="custom-button">Skills</button>
+    <button class="custom-button">Projects</button>
+</div>
+
+<!--horizontal line-->
     <div class="top-line"></div>
+
+    <!--first page-->
     <div class="page" id="firstPage">
         <div class="header">
-            
+    
             <h1 class="big-title">Hi!</h1>
             <h1 class="middle-title">I'm Tibian</h1>
             <h1 class="last-title"> <em> &lt; computer science student &gt; </em></h1>
@@ -20,13 +32,15 @@
             
         </div>
     </div>
-    
+    <!--second page-->
     <a href="#secondPage" class="scroll-button">
         <div class="page" id="secondPage">
             <div class="section">Second page. </div>
 
             </div>
         </div>
+
+        <!--java script for scrolling effect-->
         <script>
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
