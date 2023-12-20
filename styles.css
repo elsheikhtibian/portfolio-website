@@ -98,3 +98,32 @@ body {
     transform: translateY(-50%);
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.scroll-button {
+    background: url('https://icon-library.com/images/white-down-arrow-icon/white-down-arrow-icon-7.jpg') no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px; /* Adjusted distance from the bottom */
+    transform: translateX(-50%);
+    animation: bounce 1s infinite; /* Apply the bounce animation */
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-button: hover{
+    transform: scale(1.1);
+     background-color: #3498db;
+}
