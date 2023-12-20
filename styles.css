@@ -10,7 +10,6 @@ body {
     height: 100vh;
     margin: 0;
     margin-right: 600px; /* Adjusted margin-right to move 20% to the left */
-    margin-bottom: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,21 +24,21 @@ body {
     font-size: 50px;
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: 40px; /* Adjusted margin-top to move 30% up */
+    margin-top: 10px; /* Moved 50% more up from the previous value */
 }
 
 .middle-title {
     font-size: 100px;
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: 30px; /* Adjusted margin-top to move 30% up */
+    margin-top: 7.5px; /* Moved 50% more up from the previous value */
 }
 
 .last-title {
     font-size: 25px;
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: 30px; /* Adjusted margin-top to move 30% up */
+    margin-top: 7.5px; /* Moved 50% more up from the previous value */
 }
 
 
@@ -78,15 +77,20 @@ body {
     transform: translateY(-50%);
 }
 
-@keyframes bounceAnimation {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
+.animated-gif2 {
+    width: 700x; 
+    height: 300px; 
+    background: url('https://irp.cdn-website.com/aebad0b7/dms3rep/multi/line-neon.gif') center/cover no-repeat;
+    
+    position: absolute;
+    left: 110%;
+    bottom: 50%;
+    transform: translateY(-50%);
 }
-  
+
+.styled-line{
+    border: 2px solid #3498db; /* Set the border style, thickness, and color */
+    margin-bottom: 375px; 
+    width: 150%;
+    margin-left: 0;
+}
