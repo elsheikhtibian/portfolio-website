@@ -7,16 +7,26 @@ body {
 }
 
 .top-line {
-    height: 2px; /* Set the height of the line */
-    background-color: #3498db; /* Set the color of the line */
-    width: 100%; /* Make the line span the entire width of the page */
+    height: 2px;
+    width: 100%;
     margin-top: 0;
+    background: linear-gradient(90deg, #3498db, #e74c3c); 
+    animation: changeColor 5s linear infinite alternate; 
+}
+
+@keyframes changeColor {
+    0% {
+        background: linear-gradient(90deg, #3498db, #e74c3c); 
+    }
+    100% {
+        background: linear-gradient(90deg, #e74c3c, #3498db); 
+    }
 }
 
 .page {
     height: 100vh;
     margin: 0;
-    margin-right: 600px; /* Adjusted margin-right to move 20% to the left */
+    margin-right: 600px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,30 +34,30 @@ body {
     color: #ffffff;
     position: relative;
     font-family: 'OCR A Std', sans-serif;
-    padding: 20px; /* Added padding for better spacing on small screens */
+    padding: 20px; 
 }
 
 .big-title {
     font-size: 50px;
     margin: 0;
-    margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: -200px; /* Moved 50% more up from the previous value */
+    margin-left: 30px; 
+    margin-top: -200px; 
     margin-bottom: 30px;
 }
 
 .middle-title {
     font-size: 100px;
     margin: 0;
-    margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: 7.5px; /* Moved 50% more up from the previous value */
+    margin-left: 30px; 
+    margin-top: 7.5px; 
     margin-bottom: 30px;
 }
 
 .last-title {
     font-size: 25px;
     margin: 0;
-    margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: -25px; /* Moved 50% more up from the previous value */
+    margin-left: 30px; 
+    margin-top: -25px; 
     color: #3498db;
    
 }
@@ -103,9 +113,9 @@ body {
     height: 100px;
     position: absolute;
     left: 50%;
-    bottom: 10px; /* Adjusted distance from the bottom */
+    bottom: 10px; 
     transform: translateX(-50%);
-    animation: bounce 1s infinite; /* Apply the bounce animation */
+    animation: bounce 1s infinite; 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -116,8 +126,8 @@ body {
 
 .button-container {
     display: flex;
-    flex-direction: row; /* Change to row to make buttons appear next to each other */
-    justify-content: center; /* Optional: Center the buttons horizontally */
+    flex-direction: row; 
+    justify-content: center; 
     align-items: center;
 }
 
@@ -134,6 +144,6 @@ body {
     cursor: pointer;
     margin: 0px;
     left: 450px;
-    margin-left: 10px; /* Adjusted margin-right to move the buttons more to the right */
+    margin-left: 10px; 
     position: relative;
 }
