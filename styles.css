@@ -73,9 +73,9 @@ body {
 }
 
 .animated-gif {
-    width: 300px; 
-    height: 300px; 
-    background: url('https://i.pinimg.com/originals/2c/e2/e0/2ce2e0d8e2eeb0f8bfedf5503a346d4f.gif') center/cover no-repeat;
+    width: 400px; 
+    height: 400px; 
+    background: url('https://cdn.dribbble.com/users/119045/screenshots/2639162/code_icon_2.gif') center/cover no-repeat;
     
     position: absolute;
     left: 110%;
@@ -83,16 +83,7 @@ body {
     transform: translateY(-50%);
 }
 
-.animated-gif2 {
-    width: 700x; 
-    height: 300px; 
-    background: url('https://irp.cdn-website.com/aebad0b7/dms3rep/multi/line-neon.gif') center/cover no-repeat;
-    
-    position: absolute;
-    left: 110%;
-    bottom: 50%;
-    transform: translateY(-50%);
-}
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
