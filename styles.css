@@ -6,6 +6,13 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.top-line {
+    height: 2px; /* Set the height of the line */
+    background-color: #3498db; /* Set the color of the line */
+    width: 100%; /* Make the line span the entire width of the page */
+    margin-top: 60px; /* Adjusted margin to move the line down */
+}
+
 .page {
     height: 100vh;
     margin: 0;
@@ -24,7 +31,8 @@ body {
     font-size: 50px;
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: 10px; /* Moved 50% more up from the previous value */
+    margin-top: -200px; /* Moved 50% more up from the previous value */
+    margin-bottom: 30px;
 }
 
 .middle-title {
@@ -32,13 +40,15 @@ body {
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
     margin-top: 7.5px; /* Moved 50% more up from the previous value */
+    margin-bottom: 30px;
 }
 
 .last-title {
     font-size: 25px;
     margin: 0;
     margin-left: 30px; /* Adjusted margin-left to move 20% to the left */
-    margin-top: 7.5px; /* Moved 50% more up from the previous value */
+    margin-top: -25px; /* Moved 50% more up from the previous value */
+   
 }
 
 
@@ -73,7 +83,7 @@ body {
     
     position: absolute;
     left: 110%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
 }
 
@@ -88,9 +98,3 @@ body {
     transform: translateY(-50%);
 }
 
-.styled-line{
-    border: 2px solid #3498db; /* Set the border style, thickness, and color */
-    margin-bottom: 375px; 
-    width: 150%;
-    margin-left: 0;
-}
