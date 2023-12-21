@@ -83,6 +83,18 @@ body {
     transform: translateY(-50%);
 }
 
+.github-logo {
+
+    width: 50px; 
+    height: 50px; 
+    background: url('https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png') center/cover no-repeat;
+    
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
 
 
 @keyframes bounce {
@@ -109,6 +121,8 @@ body {
     animation: bounce 1s infinite; 
     transition: transform 0.3s ease-in-out;
 }
+
+
 
 .scroll-button: hover{
     transform: scale(1.1);

@@ -11,10 +11,10 @@
 
 <!-- Buttons-->
 <div class="button-container">
-    <button class="custom-button">Home</button>
-    <button class="custom-button">About me</button>
-    <button class="custom-button">Skills</button>
-    <button class="custom-button">Projects</button>
+    <button class="custom-button" onclick="scrollToSection('homeSection')">Home</button>
+    <button class="custom-button" onclick="scrollToSection('aboutMeSection')">About Me</button>
+    <button class="custom-button" onclick="scrollToSection('skillsSection')">Skills</button>
+    <button class="custom-button" onclick="scrollToSection('projectsSection')">Projects</button>
 </div>
 
 <!--horizontal line-->
@@ -28,20 +28,46 @@
             <h1 class="middle-title">I'm Tibian</h1>
             <h1 class="last-title"> <em> &lt; computer science student &gt; </em></h1>
               <div class="animated-gif"></div>
-              
-            
+              <div class="github-logo"></div>
         </div>
     </div>
+
     <!--second page-->
-    <a href="#secondPage" class="scroll-button">
+    <a href="#secondPage" class="scroll-button"></a>
         <div class="page" id="secondPage">
-            <div class="section">Second page. </div>
+            
+            <div class="section" id="homeSection">
+                home
 
             </div>
-        </div>
+
+            <div class="section" id="aboutMeSection">
+                about me
+
+            </div>
+
+            <div class="section" id="skillsSection">
+                skills
+
+            </div>
+
+            <div class="section" id="projectsSection">
+                projects
+
+            </div>
+
+
+       
 
         <!--java script for scrolling effect-->
         <script>
+
+         
+
+function changeColor(button) {
+                button.classList.toggle("clicked");
+            }
+
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
