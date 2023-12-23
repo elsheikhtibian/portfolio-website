@@ -9,17 +9,17 @@ body {
 .top-line {
     height: 2px;
     width: 100%;
-    margin-top: 0;
-    background: linear-gradient(90deg, #3498db, #e74c3c); 
-    animation: changeColor 5s linear infinite alternate; 
+    margin-top: 50px; /* Add the unit (e.g., px) */
+    background: linear-gradient(90deg, #3498db, #e74c3c);
+    animation: changeColor 5s linear infinite alternate;
 }
 
 @keyframes changeColor {
     0% {
-        background: linear-gradient(90deg, #3498db, #e74c3c); 
+        background: linear-gradient(90deg, #3498db, #e74c3c);
     }
     100% {
-        background: linear-gradient(90deg, #e74c3c, #3498db); 
+        background: linear-gradient(90deg, #e74c3c, #3498db);
     }
 }
 
@@ -166,26 +166,32 @@ body {
      background-color: #3498db;
 }
 
-.button-container {
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
+    justify-content: flex-end; /* Align buttons to the right */
 }
 
-.custom-button {
+.nav-button {
     width: 100px;
-    height: 50px;
+    height: 40px;
     font-family: 'OCR A Std', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 0px;
-    color: #3498db;
-    background-color: #060606;
+    color: #f2f2f2;
+    background-color: #000000;
     border: none;
     cursor: pointer;
-    margin: 0px;
+    text-align: center; /* Center text within the button */
+    padding: 10px; /* Adjust padding for better appearance */
+    margin: 5px; /* Add margin between buttons */
     left: 450px;
-    margin-left: 10px; /* Adjusted margin-right to move the buttons more to the right */
-    position: relative;
+
 }

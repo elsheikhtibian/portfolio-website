@@ -9,12 +9,12 @@
 </head>
 <body>
 
-<!-- Buttons-->
-<div class="button-container">
-    <button class="custom-button" onclick="scrollToSection('homeSection')">Home</button>
-    <button class="custom-button" onclick="scrollToSection('aboutMeSection')">About Me</button>
-    <button class="custom-button" onclick="scrollToSection('skillsSection')">Skills</button>
-    <button class="custom-button" onclick="scrollToSection('projectsSection')">Projects</button>
+<!-- nav bar -->
+<div class="navbar">
+    <button class="nav-button" onclick="scrollToSection('homeSection')">Home</button>
+    <button class="nav-button" onclick="scrollToSection('aboutMeSection')">About </button>
+    <button class="nav-button" onclick="scrollToSection('skillsSection')">Skills</button>
+    <button class="nav-button" onclick="scrollToSection('projectsSection')">Projects</button>
 </div>
 
 <!--horizontal line-->
@@ -40,12 +40,15 @@
         <div class="page" id="secondPage">
             
             <div class="section" id="homeSection">
-                home
-
+               
+                
             </div>
 
             <div class="section" id="aboutMeSection">
-                about me
+                <h1 class="aboutMeStuff">ABOUT ME</h1>
+    
+                <h3 class="aboutMeStuff">I'm a 3rd year student at the University of Texas at San Antonio majoring in Computer Sciene with concentrations in Data Science and Software Engineering.  </h3>
+                <h3 class="aboutMeStuff">Special interests include Artificial Intelligence, Artificial Intelligence, and Data Visualization.</h3>
 
             </div>
 
@@ -81,6 +84,16 @@ function changeColor(button) {
                     });
                 });
             });
+
+            function scrollToSection(sectionId) {
+    var targetSection = document.getElementById(sectionId);
+
+    window.scrollTo({
+        top: targetSection.offsetTop - document.querySelector('.navbar').offsetHeight,
+        behavior: 'smooth'
+    });
+}
+
         </script>
 </body>
 </html>
